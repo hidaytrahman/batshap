@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="BatShap | Gossip with random user">
+        <meta name="keywords" content="batshap, gossip online, chat online, chat online without registration">
+        <meta name="author" content="Hidayt Rahman">
+
+        <title>BatShap</title>
+        <link rel="stylesheet" href="/style.css" >
+    </head>
+    <body>
+
+        <main class="main-app-wrapper">
+
+            <section class="landing__wrapper">
+                <div class="animated-text">
+                 Start gossip.
+                </div>
+                <div class="landing-container">
+                    <form id="start-chat-form">
+                        <div class="form-group">
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Enter your name">
+                            <button type="submit" class="btn btn-primary">Start</button>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+            <!-- Landing wrapper -->
+
+            <section class="profile-wrapper">
+                <div class="branding align-middle">
+                    <h1 class="logo">BatShap</h1>
+                </div>
+
+                <div class="user-wrapper">
+
+                    <div class="user-info">
+                        <h3 class="user__name">Hidaytrahman</h3>
+                        <div class="online-status">
+                            <span>Last online:</span>
+                            <span id="last-online">05-25</span>
+                        </div>
+                    </div>
+
+                    <!--<img src="https://www.gravatar.com/avatar/hidaytrahman?s=150" 
+                        alt="profile-pic" 
+                        id="profile-pic"
+                        class="profile-pic"/> -->
+                </div>
+                <!-- user wrapper end here -->
+
+            </section>
+
+            <section class="chat__section">
+                <div class="message__area"></div>
+
+                <div>
+                    <textarea id="textarea" cols="30" rows="1" placeholder="Write a message"></textarea>
+                </div>
+            </section>
+        </main>
+
+        <!-- to access socket io on the client side js -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/utils.js"></script>
+        <script src="/client.js"></script>
+    </body>
+</html>
